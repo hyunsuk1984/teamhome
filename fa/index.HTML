@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA팀 - 함께 성장하는 팀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'naver-green': '#00C73C',
+                        'naver-blue': '#1E90FF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-naver-green">FA TEAM</h1>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-baseline space-x-8">
+                            <!--a href="#about" class="text-gray-700 hover:text-naver-green px-3 py-2 text-sm font-medium">팀 소개</a-->
+                            <a href="#culture" class="text-gray-700 hover:text-naver-green px-3 py-2 text-sm font-medium">팀 문화</a>
+                            <a href="#growth" class="text-gray-700 hover:text-naver-green px-3 py-2 text-sm font-medium">성장과 발전</a>
+                            <a href="#growthgide" class="text-gray-700 hover:text-naver-green px-3 py-2 text-sm font-medium">팀 완전 가이드</a>
+                            <!--a href="#members" class="text-gray-700 hover:text-naver-green px-3 py-2 text-sm font-medium">팀원</a>
+                            <a href="#projects" class="text-gray-700 hover:text-naver-green px-3 py-2 text-sm font-medium">프로젝트</a>
+                            <a href="#contact" class="text-gray-700 hover:text-naver-green px-3 py-2 text-sm font-medium">연락처</a-->
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <!--button class="bg-gray-800 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition-colors">
+                        팀 합류하기
+                    </button-->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        함께 성장하는<br>
+                        <span class="text-naver-green">FA팀</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        FA팀은 혁신적인 아이디어와 기술로 더 나은 미래를 만들어갑니다.<br>
+                        소통과 협업, 창의적인 사고로 함께하며 성장하는 팀입니다.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <!--button class="bg-gray-800 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-700 transition-colors">
+                            팀 둘러보기
+                        </button>
+                        <button class="border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-800 hover:text-white transition-colors">
+                            프로젝트 보기
+                        </button-->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative z-10">
+                        <div class="bg-white rounded-2xl shadow-xl p-8 mb-6">
+                            <img src="/placeholder.svg?height=300&width=400" alt="팀 협업 모습" class="w-full h-64 object-cover rounded-lg mb-4">
+                            <div class="flex items-center justify-center">
+                                <div class="bg-naver-green text-white p-3 rounded-full">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute top-4 right-4 w-16 h-16 bg-naver-blue rounded-full opacity-20"></div>
+                    <div class="absolute bottom-4 left-4 w-12 h-12 bg-naver-green rounded-full opacity-30"></div>
+                    <div class="absolute top-1/2 -right-4 w-8 h-8 bg-yellow-400 rounded-full opacity-40"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Stats -->
+    <!--section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-naver-green mb-2">12+</div>
+                    <div class="text-gray-600">팀원 수</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-naver-blue mb-2">50+</div>
+                    <div class="text-gray-600">완료 프로젝트</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">3년</div>
+                    <div class="text-gray-600">팀 운영 기간</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-purple-500 mb-2">100%</div>
+                    <div class="text-gray-600">팀원 만족도</div>
+                </div>
+            </div>
+        </div>
+    </section-->
+
+    <!-- Team Culture -->
+    <section class="py-20 bg-white" id="culture">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">FA팀 문화</h2>
+                <p class="text-xl text-gray-600">우리만의 특별한 문화와 일하는 방식을 소개합니다</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">우리를 한마디로 표현한다면?</h3>
+                    <div class="bg-gradient-to-r from-naver-green to-naver-blue p-6 rounded-xl text-white text-2xl font-bold italic mb-8">
+                        "할 땐 잘하고 열심히 하고 놀 땐 일하지 말자"
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        FA팀은 업무와 휴식의 균형을 중요시합니다. 일할 때는 최선을 다하고, 
+                        쉴 때는 제대로 쉬는 문화를 통해 지속 가능한 성장을 추구합니다.
+                    </p>
+                    <div class="flex items-center space-x-2 text-lg text-gray-700">
+                        <svg class="w-6 h-6 text-naver-green" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>요즘 팀 분위기: <strong>"일단 해보자"</strong></span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                        <div class="text-naver-green text-xl font-bold mb-2">오전 8시</div>
+                        <p class="text-gray-600">업무 시작 전 개인 정비시간</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                        <div class="text-naver-blue text-xl font-bold mb-2">오전 10시</div>
+                        <p class="text-gray-600">하루 중 가장 집중이 잘 되는 시간</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                        <div class="text-yellow-500 text-xl font-bold mb-2">월 1회</div>
+                        <p class="text-gray-600">팀원들이 함께하는 회식 문화</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+                        <div class="text-purple-500 text-xl font-bold mb-2">다양한 활동</div>
+                        <p class="text-gray-600">노래방, 볼링, 야구 등 팀 활동</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Identity -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="relative">
+                        <div class="flex justify-center">
+                            <!-- Rainbow colors representing team identity -->
+                            <div class="flex space-x-3 mb-8">
+                                <div class="w-12 h-12 bg-red-500 rounded-full"></div>
+                                <div class="w-12 h-12 bg-orange-500 rounded-full"></div>
+                                <div class="w-12 h-12 bg-yellow-500 rounded-full"></div>
+                                <div class="w-12 h-12 bg-green-500 rounded-full"></div>
+                                <div class="w-12 h-12 bg-blue-500 rounded-full"></div>
+                                <div class="w-12 h-12 bg-indigo-500 rounded-full"></div>
+                                <div class="w-12 h-12 bg-purple-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <img src="/placeholder.svg?height=300&width=400" alt="팀 활동 모습" class="w-full h-64 object-cover rounded-lg mb-6">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="w-10 h-10 bg-naver-green rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">팀 회식 문화</h4>
+                                    <p class="text-sm text-gray-600">술 강요 없고 개인 의견을 존중합니다</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-naver-blue rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">다양한 활동</h4>
+                                    <p class="text-sm text-gray-600">노래방, 볼링, 야구 등 활동적인 문화</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">FA팀의 정체성</h3>
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">팀을 상징하는 색</h4>
+                        <p class="text-lg text-gray-600 mb-4">
+                            <span class="font-bold">무지개색</span> - 빨주노초파남보처럼 각자의 특색을 가지고 어울어짐
+                        </p>
+                        <p class="text-gray-600">
+                            FA팀은 다양한 개성을 가진 팀원들이 모여 하나의 아름다운 조화를 이루는 팀입니다.
+                            각자의 색깔을 존중하며 함께 성장합니다.
+                        </p>
+                    </div>
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">팀의 인재상</h4>
+                        <p class="text-gray-600">
+                            <span class="font-bold">자신의 색깔이 뚜렷하며 긍정적이고 희망적인 사람</span>을 추구합니다.
+                            FA팀은 개인의 개성과 긍정적인 마인드를 중요시합니다.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">팀 분위기</h4>
+                        <p class="text-gray-600">
+                            조용한 사람, 시끄러운 사람, 활발한 사람이 다 어우러져 있습니다.
+                            다양한 성격의 팀원들이 서로를 존중하며 함께 일하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth and Development -->
+    <section class="py-20 bg-white" id="growth">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">성장과 발전</h2>
+                <p class="text-xl text-gray-600">FA팀에서 어떻게 성장할 수 있는지 알아보세요</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-t-4 border-naver-green">
+                    <div class="text-4xl font-bold text-gray-300 mb-4">01</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">자기 목표 설정</h3>
+                    <p class="text-gray-600">
+                        자기 자신의 목표를 설정하고 나아가는 것이 중요합니다. 
+                        FA팀은 개인의 목표 설정을 존중하고 지원합니다.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-t-4 border-naver-blue">
+                    <div class="text-4xl font-bold text-gray-300 mb-4">02</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">적극적인 질문</h3>
+                    <p class="text-gray-600">
+                        질문을 많이 할수록 좋습니다. 궁금한 부분과 업무에 관한 
+                        학구열을 질문하여 자신의 열정을 보여주세요.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-t-4 border-yellow-500">
+                    <div class="text-4xl font-bold text-gray-300 mb-4">03</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">자신만의 스타일</h3>
+                    <p class="text-gray-600">
+                        생각을 많이 하고 자신만의 스타일을 이끌어내어 
+                        업무에 대입시켜 진행하면 충분히 적응할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">FA팀의 신입사원 지원 방식</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="flex items-center text-xl font-semibold text-gray-900 mb-4">
+                            <svg class="w-6 h-6 text-naver-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            수습기간 중 중점 사항
+                        </h4>
+                        <p class="text-gray-600 mb-6 pl-8">
+                            수습기간에는 성과보다 <strong>관심, 열정</strong> 등 자신의 위치에서 할 수 있는 노력을 중요시합니다.
+                            얼마나 관심을 가지고 회사 생활에 임하느냐가 중요합니다.
+                        </p>
+                        
+                        <h4 class="flex items-center text-xl font-semibold text-gray-900 mb-4">
+                            <svg class="w-6 h-6 text-naver-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            실수에 대한 태도
+                        </h4>
+                        <p class="text-gray-600 pl-8">
+                            수습사원은 아무것도 모르기 때문에 실수를 하는 것은 당연하다고 생각합니다.
+                            모르는 부분은 알려주고, 반복적 학습이 되기 전까지 계속되는 교육을 진행합니다.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="flex items-center text-xl font-semibold text-gray-900 mb-4">
+                            <svg class="w-6 h-6 text-naver-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            선임과의 소통 방법
+                        </h4>
+                        <p class="text-gray-600 mb-6 pl-8">
+                            여러 차례 시도와 많은 소통을 통해 서로의 공감대를 확인하고 이야기하는 것이 좋습니다.
+                            회사 업무 및 업무에 대한 궁금증 질문이 공감대 형성에 많은 도움이 됩니다.
+                        </p>
+                        
+                        <h4 class="flex items-center text-xl font-semibold text-gray-900 mb-4">
+                            <svg class="w-6 h-6 text-naver-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            팀의 기대사항
+                        </h4>
+                        <p class="text-gray-600 pl-8">
+                            Yes맨도 좋지만 <strong>자신의 의견 및 주관을 이야기하고 소통</strong>해주었으면 합니다.
+                            FA팀은 개인의 의견을 존중하고 다양한 관점을 중요시합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section - Team Introduction Details -->
+    <section class="py-20 bg-white" id="growthgide">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">FA팀 완전 가이드</h2>
+                <p class="text-xl text-gray-600">FA팀에 대해 궁금한 모든 것을 알아보세요</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4">
+                    <!-- Question 1 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq1')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">1. 팀의 인재상은?</h3>
+                                <svg id="faq1-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq1" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">자신의 색깔이 뚜렷하며 긍정적이고 희망적인 사람.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq2')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">2. 팀을 상징하는 색과 이유는?</h3>
+                                <svg id="faq2-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq2" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600 mb-3"><strong>무지개색</strong></p>
+                            <p class="text-gray-600">빨주노초파남보처럼 각자의 특색을 가지고 어울어짐.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq3')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">3. 팀을 한마디로 표현한다면?</h3>
+                                <svg id="faq3-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq3" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">할 땐 잘하고 열심히 하고 놀 땐 일하지 말자</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq4')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">4. 아침에 출근해서 가장 먼저 하는 일?</h3>
+                                <svg id="faq4-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq4" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">8시 업무 시작 전에 필요한 개인 정비시간</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq5')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">5. 하루 일과 중 가장 집중이 잘 되는 시간?</h3>
+                                <svg id="faq5-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq5" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">오전 10시</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq6')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">6. 영업할 때 가장 중요하게 생각하는 가치?</h3>
+                                <svg id="faq6-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq6" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">다른 영업 사원과 다르게 자신의 색깔을 살려 고객과 소통하면서 그 안에서의 재미.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq7')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">7. 팀워크에서 가장 중요하게 여기는 요소는?</h3>
+                                <svg id="faq7-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq7" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">긍정적인 사고 방식</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq8')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">8. 우리 팀에서 소통이 잘 된다고 느낄 때는 언제인가요?</h3>
+                                <svg id="faq8-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq8" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">업무 중 자신의 고객이 아닌 서로의 고객을 먼저 이야기해주고 관심을 가질 때</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq9')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">9. 요즘 팀 분위기는 한 단어로 표현하면?</h3>
+                                <svg id="faq9-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq9" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">일단 해보자</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq10')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">10. 팀원들끼리 자주 나누는 대화 주제는 무엇인가요?</h3>
+                                <svg id="faq10-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq10" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">각자의 일상 얘기</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 11 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq11')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">11. 우리 팀의 강점은?</h3>
+                                <svg id="faq11-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq11" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">하나부터 열까지 영업에 모든 걸 알려주고, 성과가 안 나올 시 다시 분석해주고 업무 성과에 모든 것을 자세하게 알려줌.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 12 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq12')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">12. 우리 팀은 회식을 얼마나 자주 하나요? 분위기는 어떤 편인가요?</h3>
+                                <svg id="faq12-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq12" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600 mb-3">1달에 1번 사전에 날짜를 조율하고 회식을 정합니다.</p>
+                            <p class="text-gray-600">술 강요 없고 개인 의견을 존중하여 자신이 먹고 싶은 술의 종류 및 상호를 선택하여 마십니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 13 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq13')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">13. 회식 때 보통 어떤 장소나 활동을 하나요?</h3>
+                                <svg id="faq13-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq13" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">각 팀원들이 가고 싶은 가게를 선정하거나, 먹고 싶은 음식을 조사 후 회사 주변 탄방동 및 괴정동에서 합니다. 노래방, 볼링, 야구 등 활동적인 문화를 원하면 의견을 취합 후 진행합니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 14 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq14')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">14. 팀 분위기는 조용한 편인가요? 활발한 편인가요?</h3>
+                                <svg id="faq14-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq14" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">조용한 사람, 시끄러운 사람, 활발한 사람이 다 어우러져 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 15 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq15')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">15. 신입사원이 이 팀에서 어떤 방식으로 성장할 수 있을까요?</h3>
+                                <svg id="faq15-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq15" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600 mb-3">자기 자신의 목표를 설정하고 나아가면 됩니다.</p>
+                            <p class="text-gray-600">목표를 이루기 위해 업무에 대한 자신만의 계획 및 여러가지의 방법을 실행하면 충분히 성장하실 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 16 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq16')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">16. 사수나 선임과 어떻게 소통하면 좋을까요?</h3>
+                                <svg id="faq16-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq16" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600 mb-3">1번의 진솔한 소통도 좋지만 처음부터 공감대를 한번 찾기란 쉽지 않을 겁니다.</p>
+                            <p class="text-gray-600">여러 차례 시도와 많은 소통을 하여 서로의 공감대를 확인하고 이야기하는 것이 좋다고 생각합니다. 좀 더 쉽게 공감대를 찾는 방법은 회사 업무 및 업무에 궁금증 질문이 많이 도움이 될 거라고 생각합니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 17 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq17')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">17. 수습기간 동안 팀이 신경 써서 보는 부분은 어떤 점인가요?</h3>
+                                <svg id="faq17-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq17" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600 mb-3">수습기간에 얼마나 관심을 가지고 회사 생활에 임하냐입니다.</p>
+                            <p class="text-gray-600">수습기간에는 성과보다 관심, 열정 등 자신의 위치에서 할 수 있는 노력입니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 18 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq18')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">18. 우리 팀에서는 '이것만은 꼭 지켜주었으면 좋겠다.'가 있다면?</h3>
+                                <svg id="faq18-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq18" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600">Yes맨도 좋지만 자신의 의견 및 주관을 이야기하고 소통을 해줬으면 합니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 19 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq19')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">19. 수습사원이 실수했을 때 팀은 보통 어떤 반응인가요?</h3>
+                                <svg id="faq19-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq19" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600 mb-3">수습사원은 아무것도 모르기 때문에 실수를 하는 일에 대하여 당연하다고 생각합니다.</p>
+                            <p class="text-gray-600">모르는 부분은 알려주고 실수의 경우 또한 반복적 학습이 되기 전까지는 계속되는 교육을 진행합니다. 팀장, 선배 모두 같은 생각입니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 20 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-naver-green" onclick="toggleAccordion('faq20')">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-lg font-semibold text-gray-900">20. 신입이 빠르게 적응하려면 어떤 걸 잘하면 좋을까요?</h3>
+                                <svg id="faq20-icon" class="w-5 h-5 text-gray-500 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div id="faq20" class="hidden px-6 py-4 bg-white">
+                            <p class="text-gray-600 mb-3">질문을 많이 할수록 좋습니다. 궁금한 부분과 업무에 관한 학구열을 질문하여 자신의 마음과 열정을 팀과 팀원들에게 보여주고 자신의 업무에 있어 도움이 됩니다.</p>
+                            <p class="text-gray-600">또한 업무에 관하여 미숙하지만 생각을 많이 하고 자신만의 스타일을 이끌어보고 업무에 대입시켜 진행하면 충분히 적응을 잘 하실 것입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+
+    <!-- Sales Philosophy -->
+    <section class="py-20 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">FA팀의 영업 철학</h2>
+                <p class="text-xl text-gray-300">우리만의 특별한 영업 방식과 가치를 소개합니다</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">영업의 핵심 가치</h3>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl mb-8">
+                        <p class="text-xl italic">
+                            "다른 영업 사원과 다르게 자신의 색깔을 살려 고객과 소통하면서 그 안에서의 재미를 찾는 것"
+                        </p>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-8">
+                        FA팀은 획일화된 영업 방식이 아닌, 각 팀원의 개성과 강점을 살린 
+                        고객 중심의 소통을 중요시합니다. 이를 통해 고객과의 관계에서 
+                        진정성을 바탕으로 한 신뢰를 구축합니다.
+                    </p>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-10 h-10 bg-naver-green rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">팀워크의 핵심</h4>
+                            <p class="text-gray-300">긍정적인 사고 방식</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-naver-blue rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">소통의 핵심</h4>
+                            <p class="text-gray-300">서로의 고객에 대한 관심과 배려</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white/5 backdrop-blur-sm rounded-xl p-8">
+                        <h4 class="text-2xl font-bold mb-6">FA팀의 강점</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-naver-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <p class="text-gray-200">하나부터 열까지 영업에 모든 걸 알려주고, 성과가 안 나올 시 다시 분석해줍니다.</p>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-naver-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <p class="text-gray-200">업무 성과에 모든 것을 자세하게 알려줍니다.</p>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-naver-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <p class="text-gray-200">업무 중 자신의 고객이 아닌 서로의 고객을 먼저 이야기해주고 관심을 가집니다.</p>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-naver-green flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <p class="text-gray-200">각자의 일상 이야기를 나누며 친밀한 관계를 형성합니다.</p>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-8 p-6 bg-white/10 rounded-lg">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
+                                </svg>
+                            </div>
+                            <h5 class="text-xl font-bold">FA팀의 모토</h5>
+                        </div>
+                        <p class="text-gray-200 text-lg italic">
+                            "일단 해보자"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Values -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">FA팀의 핵심 가치</h2>
+                <p class="text-xl text-gray-600">우리가 추구하는 가치와 문화를 소개합니다</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-naver-green rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">협업</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        서로 다른 배경과 경험을 가진 팀원들이 모여 시너지를 만들어냅니다. 
+                        열린 소통과 상호 존중을 바탕으로 함께 성장합니다.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-naver-blue rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">혁신</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        새로운 기술과 아이디어를 적극적으로 탐구하며, 
+                        창의적인 해결책을 통해 더 나은 결과를 만들어냅니다.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">성장</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        개인과 팀의 지속적인 성장을 추구하며, 
+                        새로운 도전을 통해 더 높은 목표를 달성해나갑니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-naver-green to-naver-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                FA팀과 함께 성장하세요
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8 max-w-3xl mx-auto">
+                우리는 항상 열정적이고 창의적인 인재를 찾고 있습니다. 
+                함께 혁신적인 프로젝트를 만들어가며 성장할 동료를 기다립니다.
+            </p>
+            <!--div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-naver-green px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-100 transition-colors">
+                    팀 합류 문의
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-white hover:text-naver-green transition-colors">
+                    더 알아보기
+                </button>
+            </div-->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">FA팀</h3>
+                    <p class="text-gray-400 mb-4">
+                        혁신적인 아이디어와 기술로 더 나은 미래를 만들어가는 팀입니다.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <!--h4 class="text-lg font-semibold mb-4">팀 정보</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">팀 소개</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">팀원</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">프로젝트</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">채용</a></li>
+                    </ul-->
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">연락처</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>이메일: fa-team@company.com</li>
+                        <li>전화: 02-1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 FA팀. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
